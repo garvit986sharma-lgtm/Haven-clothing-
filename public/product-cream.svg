@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1060" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-cream-studio" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5f7"/>
+      <stop offset="100%" stop-color="#eaeaea"/>
+    </linearGradient>
+    <pattern id="waffle-cream-pattern" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#ede8dc"/>
+      <rect x="1" y="1" width="8" height="8" fill="#f8f4ec" rx="1"/>
+      <rect x="2" y="2" width="6" height="6" fill="#e2dcce"/>
+    </pattern>
+    <filter id="shadow-model-cream" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap');
+      .sans-bold { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- Studio Clean Backdrop -->
+  <rect width="800" height="1060" fill="url(#bg-cream-studio)"/>
+
+  <!-- Male Model Silhouette (Neck & Head suggestion like lookbook) -->
+  <g transform="translate(400, 140)">
+    <!-- Neck -->
+    <path d="M -42 0 L -42 80 L 42 80 L 42 0 Z" fill="#d8ab8c"/>
+    <path d="M -45 -10 Q 0 10 45 -10 L 42 35 Q 0 45 -42 35 Z" fill="#c79a7b"/>
+    <!-- Jawline / chin -->
+    <path d="M -50 -20 Q 0 10 50 -20 L 50 -60 L -50 -60 Z" fill="#d8ab8c"/>
+  </g>
+
+  <!-- Long Sleeve Cream Waffle Tee Garment (Worn look) -->
+  <g filter="url(#shadow-model-cream)">
+    <!-- Main Body & Long Sleeves -->
+    <path d="M 330 215 
+             Q 400 240 470 215 
+             L 600 260 
+             L 660 620 
+             L 570 635 
+             L 550 400 
+             L 550 820 
+             Q 400 835 250 820 
+             L 250 400 
+             L 230 635 
+             L 140 620 
+             L 200 260 Z" 
+          fill="#f3efe5"/>
+    
+    <!-- Body Waffle texture overlay -->
+    <path d="M 330 215 Q 400 240 470 215 L 600 260 L 660 620 L 570 635 L 550 400 L 550 820 Q 400 835 250 820 L 250 400 L 230 635 L 140 620 L 200 260 Z" 
+          fill="url(#waffle-cream-pattern)" opacity="0.95"/>
+  </g>
+
+  <!-- Ribbed Crewneck Collar -->
+  <path d="M 345 215 C 360 265 440 265 455 215 C 440 250 360 250 345 215 Z" fill="#e8e2d4" stroke="#d5cebe" stroke-width="2"/>
+  
+  <!-- Inside Neck Label -->
+  <rect x="375" y="228" width="50" height="20" fill="#141416" rx="1"/>
+  <text x="400" y="241" text-anchor="middle" class="sans-bold" font-size="7" letter-spacing="2" fill="#fff">HAVEN</text>
+
+  <!-- Chest Typography: "LEAD YOUR LIFE. / DON'T FOLLOW THE CROWD" (matches user's screenshot) -->
+  <text x="400" y="375" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="2" fill="#1c1c1f" font-weight="800">LEAD YOUR LIFE.</text>
+  <text x="400" y="390" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" letter-spacing="1" fill="#444" font-weight="700">DON'T FOLLOW THE CROWD</text>
+
+  <!-- Denims / Jeans waistband -->
+  <path d="M 252 820 Q 400 835 548 820 L 565 1060 L 235 1060 Z" fill="#6884a1"/>
+  <line x1="400" y1="835" x2="400" y2="1060" stroke="#526d87" stroke-width="3"/>
+  <circle cx="400" cy="855" r="7" fill="#c49e4d"/>
+
+  <!-- Red Offer Banner as in screenshot: "GET FOR ₹1199" -->
+  <g transform="translate(40, 780)">
+    <rect x="0" y="0" width="220" height="42" fill="#e11d48" rx="6"/>
+    <text x="110" y="26" text-anchor="middle" class="sans-bold" font-size="14" letter-spacing="1.5" fill="#ffffff">GET FOR ₹1199</text>
+  </g>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1060" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-black-studio" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5f7"/>
+      <stop offset="100%" stop-color="#eaeaea"/>
+    </linearGradient>
+    <pattern id="waffle-dark-pattern" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#141416"/>
+      <rect x="1" y="1" width="8" height="8" fill="#1e1e22" rx="1"/>
+      <rect x="2" y="2" width="6" height="6" fill="#121214"/>
+    </pattern>
+    <filter id="shadow-model" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap');
+      .script-font { font-family: 'Playfair Display', Georgia, serif; font-style: italic; }
+      .sans-bold { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- Studio Clean Backdrop -->
+  <rect width="800" height="1060" fill="url(#bg-black-studio)"/>
+
+  <!-- Male Model Silhouette (Neck & Head suggestion like lookbook) -->
+  <g transform="translate(400, 140)">
+    <!-- Neck -->
+    <path d="M -42 0 L -42 80 L 42 80 L 42 0 Z" fill="#d8ab8c"/>
+    <path d="M -45 -10 Q 0 10 45 -10 L 42 35 Q 0 45 -42 35 Z" fill="#c79a7b"/>
+    <!-- Jawline / chin -->
+    <path d="M -50 -20 Q 0 10 50 -20 L 50 -60 L -50 -60 Z" fill="#d8ab8c"/>
+  </g>
+
+  <!-- Long Sleeve Black Waffle Tee Garment (Worn look) -->
+  <g filter="url(#shadow-model)">
+    <!-- Main Body & Long Sleeves -->
+    <path d="M 330 215 
+             Q 400 240 470 215 
+             L 600 260 
+             L 660 620 
+             L 570 635 
+             L 550 400 
+             L 550 820 
+             Q 400 835 250 820 
+             L 250 400 
+             L 230 635 
+             L 140 620 
+             L 200 260 Z" 
+          fill="#161619"/>
+    
+    <!-- Body Waffle texture overlay -->
+    <path d="M 330 215 Q 400 240 470 215 L 600 260 L 660 620 L 570 635 L 550 400 L 550 820 Q 400 835 250 820 L 250 400 L 230 635 L 140 620 L 200 260 Z" 
+          fill="url(#waffle-dark-pattern)" opacity="0.95"/>
+  </g>
+
+  <!-- Ribbed Crewneck Collar -->
+  <path d="M 345 215 C 360 265 440 265 455 215 C 440 250 360 250 345 215 Z" fill="#0d0d0f" stroke="#252528" stroke-width="2"/>
+  
+  <!-- Inside Neck Label -->
+  <rect x="375" y="228" width="50" height="20" fill="#08080a" rx="1"/>
+  <text x="400" y="241" text-anchor="middle" class="sans-bold" font-size="7" letter-spacing="2" fill="#fff">HAVEN</text>
+
+  <!-- Chest Typography: "Cooking in Dark." (matches user's screenshot) -->
+  <text x="400" y="380" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" letter-spacing="2" fill="#e898aa" font-weight="600">Cooking in Dark.</text>
+
+  <!-- Left Long Sleeve: Script "Grow In Shadow" along sleeve length -->
+  <g transform="translate(195, 470) rotate(-78)">
+    <text x="0" y="0" class="script-font" font-size="28" fill="#e898aa" letter-spacing="1.5">Grow In Shadow</text>
+  </g>
+
+  <!-- Right Long Sleeve: Script "Grow In Shadow" along sleeve length -->
+  <g transform="translate(605, 470) rotate(78)">
+    <text x="0" y="0" class="script-font" font-size="28" fill="#e898aa" letter-spacing="1.5">Grow In Shadow</text>
+  </g>
+
+  <!-- Denims / Jeans waistband -->
+  <path d="M 252 820 Q 400 835 548 820 L 565 1060 L 235 1060 Z" fill="#4d6785"/>
+  <!-- Jeans seam -->
+  <line x1="400" y1="835" x2="400" y2="1060" stroke="#3b526d" stroke-width="3"/>
+  <circle cx="400" cy="855" r="7" fill="#c49e4d"/>
+
+  <!-- Red Offer Banner as in screenshot: "GET FOR ₹1299" -->
+  <g transform="translate(40, 780)">
+    <rect x="0" y="0" width="220" height="42" fill="#e11d48" rx="6"/>
+    <text x="110" y="26" text-anchor="middle" class="sans-bold" font-size="14" letter-spacing="1.5" fill="#ffffff">GET FOR ₹1299</text>
+  </g>
+</svg>

@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <!-- Lawn grass gradients -->
+    <linearGradient id="grass-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a3f18"/>
+      <stop offset="35%" stop-color="#3b5820"/>
+      <stop offset="70%" stop-color="#243815"/>
+      <stop offset="100%" stop-color="#19280d"/>
+    </linearGradient>
+
+    <radialGradient id="sun-dapple" cx="30%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#c4d875" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#69852f" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Right Scrim for Text Readability -->
+    <linearGradient id="right-scrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#050704" stop-opacity="0.1"/>
+      <stop offset="45%" stop-color="#070a05" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#050803" stop-opacity="0.82"/>
+      <stop offset="100%" stop-color="#040602" stop-opacity="0.94"/>
+    </linearGradient>
+
+    <!-- Waffle Knit Pattern Dark -->
+    <pattern id="waffle-knit-hero" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#151518"/>
+      <rect x="1" y="1" width="6" height="6" fill="#1c1c20" rx="1"/>
+      <rect x="2" y="2" width="4" height="4" fill="#121214"/>
+    </pattern>
+
+    <!-- Waffle Knit Pattern Cream -->
+    <pattern id="waffle-knit-cream" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#e5dfcf"/>
+      <rect x="1" y="1" width="6" height="6" fill="#f4eee0" rx="1"/>
+      <rect x="2" y="2" width="4" height="4" fill="#ded7c4"/>
+    </pattern>
+
+    <!-- Drop Shadow for Garments -->
+    <filter id="garment-shadow" x="-15%" y="-15%" width="135%" height="135%">
+      <feDropShadow dx="8" dy="18" stdDeviation="22" flood-color="#050a03" flood-opacity="0.65"/>
+    </filter>
+    <filter id="cream-shadow" x="-15%" y="-15%" width="135%" height="135%">
+      <feDropShadow dx="-6" dy="14" stdDeviation="16" flood-color="#0b1206" flood-opacity="0.5"/>
+    </filter>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@500;700&amp;display=swap');
+      .script-font { font-family: 'Playfair Display', Georgia, serif; font-style: italic; }
+      .sans-font { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Base Grass Field -->
+  <rect width="1600" height="900" fill="url(#grass-grad)"/>
+
+  <!-- Grass Blade Texture Details -->
+  <g opacity="0.35">
+    <path d="M 50 120 Q 80 80 120 110 Q 150 140 180 90" stroke="#5d822b" stroke-width="3" fill="none"/>
+    <path d="M 220 250 Q 250 190 280 230" stroke="#79a334" stroke-width="4" fill="none"/>
+    <path d="M 400 150 Q 420 110 460 140" stroke="#689329" stroke-width="3" fill="none"/>
+    <path d="M 120 450 Q 160 380 190 420" stroke="#567a26" stroke-width="4" fill="none"/>
+    <path d="M 320 600 Q 360 520 400 580" stroke="#7ea835" stroke-width="3.5" fill="none"/>
+    <path d="M 150 780 Q 180 710 220 760" stroke="#668e29" stroke-width="4" fill="none"/>
+    <path d="M 550 750 Q 580 690 620 730" stroke="#87b238" stroke-width="3" fill="none"/>
+    <path d="M 720 220 Q 750 170 790 210" stroke="#537526" stroke-width="3" fill="none"/>
+    <path d="M 680 500 Q 710 450 750 490" stroke="#70972e" stroke-width="3.5" fill="none"/>
+  </g>
+
+  <!-- Sunlight bokeh dapples -->
+  <rect width="1600" height="900" fill="url(#sun-dapple)"/>
+  <circle cx="280" cy="220" r="140" fill="#e2ee9d" opacity="0.15" filter="blur(35px)"/>
+  <circle cx="560" cy="400" r="180" fill="#eff8b3" opacity="0.1" filter="blur(45px)"/>
+  <circle cx="180" cy="620" r="130" fill="#d8ea8f" opacity="0.12" filter="blur(30px)"/>
+
+  <!-- ================= GARMENT 1: BLACK WAFFLE LONG SLEEVE TEE ================= -->
+  <g transform="translate(180, 80) rotate(-7 350 400)" filter="url(#garment-shadow)">
+    <!-- Black tee silhouette (relaxed / drop shoulder flat lay) -->
+    <path d="M 230 180 
+             Q 360 215 490 180 
+             L 690 320 
+             L 630 680 
+             L 530 640 
+             L 510 400 
+             L 520 790 
+             Q 360 810 200 790 
+             L 210 400 
+             L 190 640 
+             L 90 680 
+             L 30 320 Z" 
+          fill="#131316"/>
+    
+    <!-- Body Waffle texture -->
+    <path d="M 230 180 Q 360 215 490 180 L 690 320 L 630 680 L 530 640 L 510 400 L 520 790 Q 360 810 200 790 L 210 400 L 190 640 L 90 680 L 30 320 Z" 
+          fill="url(#waffle-knit-hero)" opacity="0.9"/>
+
+    <!-- Collar -->
+    <path d="M 280 185 C 300 245 420 245 440 185 C 415 225 305 225 280 185 Z" fill="#0d0d0f" stroke="#222226" stroke-width="2"/>
+    <rect x="330" y="205" width="60" height="26" fill="#0a0a0c" rx="2" stroke="#28282d"/>
+    <text x="360" y="221" text-anchor="middle" class="sans-font" font-size="8" letter-spacing="2" fill="#fff" font-weight="700">HAVEN</text>
+
+    <!-- Chest Print: "Cooking In Dark." -->
+    <text x="360" y="325" text-anchor="middle" class="sans-font" font-size="14" letter-spacing="4" fill="#e28599" font-weight="600">Cooking In Dark.</text>
+
+    <!-- Left Long Sleeve: Script "Grow In Shadow" in pinkish script -->
+    <g transform="translate(145, 500) rotate(-82)">
+      <text x="0" y="0" class="script-font" font-size="28" fill="#d97d91" opacity="0.92" letter-spacing="1">Grow In Shadow</text>
+    </g>
+
+    <!-- Right Long Sleeve: Script "Grow In Shadow" -->
+    <g transform="translate(575, 480) rotate(82)">
+      <text x="0" y="0" class="script-font" font-size="28" fill="#d97d91" opacity="0.92" letter-spacing="1">Grow In Shadow</text>
+    </g>
+
+    <!-- Brand Emblem at bottom left -->
+    <g transform="translate(250, 740)">
+      <circle cx="14" cy="14" r="12" fill="none" stroke="#666" stroke-width="1.2"/>
+      <text x="14" y="17" text-anchor="middle" class="sans-font" font-size="6" letter-spacing="1" fill="#bbb" font-weight="700">HAVEN</text>
+    </g>
+  </g>
+
+  <!-- ================= GARMENT 2: CREAM WAFFLE TEE FOLDED ON TOP ================= -->
+  <g transform="translate(280, 160) rotate(14 300 300)" filter="url(#cream-shadow)">
+    <!-- Cream folded tee shape -->
+    <path d="M 120 160 
+             Q 220 185 320 160 
+             L 420 250 
+             L 360 490 
+             L 330 450 
+             L 320 540 
+             Q 220 550 120 540 
+             L 110 450 
+             L 80 490 
+             L 20 250 Z" 
+          fill="#ede8db"/>
+    <path d="M 120 160 Q 220 185 320 160 L 420 250 L 360 490 L 330 450 L 320 540 Q 220 550 120 540 L 110 450 L 80 490 L 20 250 Z" 
+          fill="url(#waffle-knit-cream)" opacity="0.95"/>
+
+    <!-- Ribbed collar -->
+    <path d="M 160 165 C 175 210 265 210 280 165 C 265 198 175 198 160 165 Z" fill="#ded7c6" stroke="#cec5b0" stroke-width="2"/>
+    <rect x="200" y="180" width="40" height="20" fill="#141416" rx="2"/>
+    <text x="220" y="193" text-anchor="middle" class="sans-font" font-size="7" letter-spacing="1.5" fill="#fff" font-weight="700">HAVEN</text>
+
+    <!-- Chest Print: "LEAD YOUR LIFE. / DON'T FOLLOW THE CROWD" -->
+    <text x="220" y="270" text-anchor="middle" class="sans-font" font-size="11" letter-spacing="2" fill="#1a1a1c" font-weight="800">LEAD YOUR LIFE.</text>
+    <text x="220" y="286" text-anchor="middle" class="sans-font" font-size="6" letter-spacing="1" fill="#444" font-weight="700">DON'T FOLLOW THE CROWD</text>
+
+    <!-- Fabric fold seam highlight -->
+    <path d="M 90 350 Q 220 375 350 350" stroke="#d5cdba" stroke-width="2.5" fill="none"/>
+    <path d="M 100 440 Q 220 460 340 440" stroke="#d5cdba" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Right Side Shadow Scrim Gradient -->
+  <rect x="750" y="0" width="850" height="900" fill="url(#right-scrim)"/>
+
+  <!-- Subtle vignette edges -->
+  <rect width="1600" height="900" fill="none" stroke="#000" stroke-width="2" opacity="0.2"/>
+</svg>

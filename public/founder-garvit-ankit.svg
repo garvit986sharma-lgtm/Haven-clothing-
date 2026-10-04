@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="100%" height="100%">
+  <defs>
+    <!-- Night atmosphere gradients -->
+    <linearGradient id="night-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0e1017"/>
+      <stop offset="60%" stop-color="#141824"/>
+      <stop offset="100%" stop-color="#0a0c12"/>
+    </linearGradient>
+
+    <!-- Warm lantern glow -->
+    <radialGradient id="lantern-glow" cx="85%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#ffdda1" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="pink-flower-glow" cx="55%" cy="30%" r="45%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#be185d" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Shadow filter -->
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap');
+      .serif-display { font-family: 'Playfair Display', Georgia, serif; font-style: italic; }
+      .sans-bold { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- Deep Night Patio Background -->
+  <rect width="900" height="1200" fill="url(#night-bg)"/>
+
+  <!-- Warm ambient lights -->
+  <rect width="900" height="1200" fill="url(#lantern-glow)"/>
+  <rect width="900" height="1200" fill="url(#pink-flower-glow)"/>
+
+  <!-- Left Green Cypress Shrub -->
+  <g opacity="0.85">
+    <path d="M 0 450 Q 80 320 140 480 Q 200 680 180 920 L 0 950 Z" fill="#143818"/>
+    <path d="M 20 480 Q 90 380 130 520 Q 160 700 140 920 L 0 950 Z" fill="#205c26"/>
+    <path d="M 10 520 Q 70 440 100 580 Q 120 720 90 920 Z" fill="#2d7a34"/>
+  </g>
+
+  <!-- Right Green Evergreen Shrub -->
+  <g opacity="0.9" transform="translate(700, 520)">
+    <path d="M 180 0 Q 100 120 70 280 Q 50 480 80 680 L 200 680 Z" fill="#18421c"/>
+    <path d="M 160 50 Q 90 180 80 320 Q 70 500 110 680 L 200 680 Z" fill="#2d6a33"/>
+    <path d="M 150 120 Q 110 240 100 380 Q 90 520 130 680 Z" fill="#3f8846"/>
+  </g>
+
+  <!-- Giant Pink Floral Arch (Bougainvillea / Cherry Blossom from photo) -->
+  <g transform="translate(480, 80)">
+    <!-- Arch curves -->
+    <path d="M 20 120 Q 100 0 240 40 Q 320 120 280 280 Q 240 450 160 520 Q 80 480 30 360 Z" fill="#db2777" opacity="0.3" filter="blur(30px)"/>
+    
+    <!-- Dense blossom clusters -->
+    <!-- Cluster 1 (Top Arch) -->
+    <circle cx="80" cy="80" r="45" fill="#f43f5e"/>
+    <circle cx="120" cy="60" r="55" fill="#ec4899"/>
+    <circle cx="170" cy="50" r="60" fill="#e11d48"/>
+    <circle cx="220" cy="70" r="55" fill="#f43f5e"/>
+    <circle cx="260" cy="110" r="50" fill="#fb7185"/>
+
+    <!-- Cluster 2 (Mid Column) -->
+    <circle cx="50" cy="150" r="48" fill="#f43f5e"/>
+    <circle cx="100" cy="140" r="58" fill="#f43f5e"/>
+    <circle cx="150" cy="130" r="65" fill="#ec4899"/>
+    <circle cx="80" cy="220" r="62" fill="#e11d48"/>
+    <circle cx="130" cy="210" r="70" fill="#fb7185"/>
+    <circle cx="170" cy="200" r="60" fill="#f43f5e"/>
+    <circle cx="90" cy="300" r="65" fill="#ec4899"/>
+    <circle cx="140" cy="290" r="72" fill="#e11d48"/>
+
+    <!-- Cluster 3 (Cascade Down Behind Chairs) -->
+    <circle cx="70" cy="390" r="60" fill="#f43f5e"/>
+    <circle cx="120" cy="380" r="68" fill="#ec4899"/>
+    <circle cx="80" cy="480" r="58" fill="#e11d48"/>
+    <circle cx="130" cy="470" r="64" fill="#fb7185"/>
+    <circle cx="90" cy="560" r="50" fill="#f43f5e"/>
+
+    <!-- Flower petal details -->
+    <circle cx="110" cy="110" r="18" fill="#ffe4e6"/>
+    <circle cx="140" cy="170" r="22" fill="#ffe4e6"/>
+    <circle cx="95" cy="250" r="20" fill="#ffe4e6"/>
+    <circle cx="150" cy="330" r="24" fill="#ffe4e6"/>
+    <circle cx="100" cy="420" r="20" fill="#ffe4e6"/>
+  </g>
+
+  <!-- Modern White Geometric Lattice Patio Bench/Chairs -->
+  <g stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.75" transform="translate(140, 560)">
+    <!-- Backrest Webbing -->
+    <ellipse cx="200" cy="180" rx="160" ry="180"/>
+    <ellipse cx="440" cy="180" rx="160" ry="180"/>
+    <path d="M 60 140 Q 200 80 340 140 Q 480 80 580 140"/>
+    <path d="M 70 200 Q 200 140 330 200 Q 460 140 570 200"/>
+    <path d="M 90 260 Q 200 200 320 260 Q 440 200 550 260"/>
+    <!-- Diagonal lattice cross stitches -->
+    <line x1="120" y1="100" x2="260" y2="280"/>
+    <line x1="260" y1="100" x2="120" y2="280"/>
+    <line x1="380" y1="100" x2="520" y2="280"/>
+    <line x1="520" y1="100" x2="380" y2="280"/>
+  </g>
+
+  <!-- ================= THE FOUNDERS (GARVIT & ANKIT) ================= -->
+
+  <!-- FOUNDER 1: GARVIT (On the Left, wearing glasses & white shirt with script) -->
+  <g filter="url(#soft-shadow)">
+    <!-- Arm around Ankit's shoulder -->
+    <path d="M 390 540 Q 470 510 570 550 L 580 590 Q 480 550 380 580 Z" fill="#f8fafc"/>
+
+    <!-- Left Leg crossed up casually on the chair as in photo -->
+    <path d="M 230 750 Q 200 840 160 880 L 110 840 Q 170 780 210 720 Z" fill="#18181b"/>
+    <!-- Foot in casual slide sandal -->
+    <path d="M 160 880 L 120 910 L 80 880 Q 110 850 150 860 Z" fill="#d2a078"/>
+    <path d="M 130 870 L 160 890 L 140 910 L 110 890 Z" fill="#3f3f46"/>
+
+    <!-- Right Leg extending forward -->
+    <path d="M 270 760 L 250 960 L 190 960 L 220 760 Z" fill="#18181b"/>
+
+    <!-- White Shirt Body (Relaxed casual open collar) -->
+    <path d="M 230 520 
+             Q 340 510 440 530 
+             L 450 780 
+             Q 340 810 220 770 Z" 
+          fill="#f8fafc"/>
+
+    <!-- Left sleeve (short/rolled) -->
+    <path d="M 230 520 L 150 630 L 190 660 L 250 580 Z" fill="#f1f5f9"/>
+
+    <!-- Shirt folds and texture -->
+    <path d="M 280 550 Q 300 680 270 770" stroke="#cbd5e1" stroke-width="2" fill="none"/>
+    <path d="M 370 560 Q 390 690 380 780" stroke="#cbd5e1" stroke-width="2" fill="none"/>
+
+    <!-- Blue Script Embroidery on Chest ("Poetic Work") -->
+    <text x="330" y="640" text-anchor="middle" class="serif-display" font-size="18" fill="#38bdf8" letter-spacing="1">Poetic Work</text>
+    <text x="330" y="655" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" fill="#64748b" letter-spacing="1">HAVEN ARCHIVES</text>
+
+    <!-- Open V-Neck & Chest -->
+    <path d="M 310 520 Q 335 580 360 520" fill="#e0b190"/>
+    <path d="M 310 520 L 335 580 L 360 520" stroke="#cbd5e1" stroke-width="2" fill="none"/>
+
+    <!-- Neck & Face -->
+    <rect x="315" y="470" width="40" height="60" fill="#e0b190"/>
+    <ellipse cx="335" cy="460" rx="42" ry="52" fill="#e8bb9b"/>
+
+    <!-- Smile & Features -->
+    <path d="M 320 480 Q 335 492 350 480" stroke="#a16244" stroke-width="2" fill="none"/>
+    <ellipse cx="335" cy="465" rx="5" ry="3" fill="#cf9b7c"/>
+
+    <!-- Black-Rimmed Glasses (Iconic to Garvit in photo) -->
+    <rect x="306" y="438" width="24" height="18" rx="4" fill="none" stroke="#09090b" stroke-width="3"/>
+    <rect x="340" y="438" width="24" height="18" rx="4" fill="none" stroke="#09090b" stroke-width="3"/>
+    <line x1="330" y1="446" x2="340" y2="446" stroke="#09090b" stroke-width="3"/>
+    <!-- Eyes behind glasses -->
+    <circle cx="318" cy="447" r="3.5" fill="#262626"/>
+    <circle cx="352" cy="447" r="3.5" fill="#262626"/>
+
+    <!-- Wavy Dark Hair -->
+    <path d="M 290 440 
+             Q 285 390 335 390 
+             Q 385 390 380 440 
+             Q 360 415 335 418 
+             Q 310 415 290 440 Z" 
+          fill="#1c1917"/>
+    <circle cx="305" cy="415" r="14" fill="#1c1917"/>
+    <circle cx="335" cy="405" r="16" fill="#1c1917"/>
+    <circle cx="365" cy="415" r="14" fill="#1c1917"/>
+  </g>
+
+  <!-- FOUNDER 2: ANKIT (On the Right, wearing black polo tee with white trim) -->
+  <g filter="url(#soft-shadow)">
+    <!-- Dark Jeans/Trousers -->
+    <path d="M 460 760 L 440 1020 L 530 1020 L 570 780 Z" fill="#18181b"/>
+    <path d="M 570 780 L 610 1020 L 700 1020 L 670 760 Z" fill="#18181b"/>
+
+    <!-- Black Polo Shirt Body -->
+    <path d="M 460 540 
+             Q 570 535 680 550 
+             L 660 790 
+             Q 570 810 460 780 Z" 
+          fill="#111113"/>
+
+    <!-- Sleeves with crisp white edge piping as in photo -->
+    <!-- Left Sleeve -->
+    <path d="M 460 540 L 430 650 L 480 665 L 500 580 Z" fill="#111113"/>
+    <line x1="430" y1="650" x2="480" y2="665" stroke="#ffffff" stroke-width="3"/>
+
+    <!-- Right Sleeve -->
+    <path d="M 680 550 L 710 650 L 660 665 L 640 580 Z" fill="#111113"/>
+    <line x1="660" y1="665" x2="710" y2="650" stroke="#ffffff" stroke-width="3"/>
+
+    <!-- Polo Collar with White Edge Trim -->
+    <path d="M 530 535 L 565 595 L 600 535 Z" fill="#1c1c20"/>
+    <path d="M 525 535 L 555 585 L 565 595 L 575 585 L 605 535" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+    
+    <!-- White Polo Chest Emblem (HAVEN Horse/Monogram) -->
+    <circle cx="615" cy="605" r="4.5" fill="#ffffff"/>
+    <path d="M 612 602 L 616 610" stroke="#ffffff" stroke-width="1.5"/>
+
+    <!-- Arms clasped in lap -->
+    <path d="M 480 665 Q 530 760 550 820 L 600 820 Q 610 760 660 665 Z" fill="#dfad89"/>
+    <!-- Clasped hands -->
+    <ellipse cx="575" cy="825" rx="35" ry="20" fill="#d8a37e"/>
+
+    <!-- Neck & Face -->
+    <rect x="545" y="475" width="40" height="65" fill="#dfad89"/>
+    <ellipse cx="565" cy="465" rx="43" ry="54" fill="#e8bb9b"/>
+
+    <!-- Confident Eyes & Eyebrows -->
+    <path d="M 535 442 Q 548 438 560 442" stroke="#292524" stroke-width="3" fill="none"/>
+    <path d="M 570 442 Q 582 438 595 442" stroke="#292524" stroke-width="3" fill="none"/>
+    <circle cx="548" cy="452" r="3.5" fill="#1c1917"/>
+    <circle cx="582" cy="452" r="3.5" fill="#1c1917"/>
+    <path d="M 565 456 L 563 472 L 569 472" stroke="#bd8665" stroke-width="2" fill="none"/>
+
+    <!-- Subtle Stubble & Goatee as in photo -->
+    <path d="M 540 488 Q 565 515 590 488" stroke="#44403c" stroke-width="3" fill="none" opacity="0.6"/>
+    <path d="M 552 490 Q 565 498 578 490" stroke="#78350f" stroke-width="2" fill="none"/>
+
+    <!-- Thick Textured Wavy Hair -->
+    <path d="M 520 445 
+             Q 510 380 565 375 
+             Q 620 380 615 445 
+             Q 590 410 565 412 
+             Q 540 410 520 445 Z" 
+          fill="#1c1917"/>
+    <circle cx="535" cy="405" r="18" fill="#1c1917"/>
+    <circle cx="565" cy="390" r="22" fill="#1c1917"/>
+    <circle cx="595" cy="405" r="18" fill="#1c1917"/>
+    <circle cx="545" cy="385" r="16" fill="#292524"/>
+    <circle cx="585" cy="385" r="16" fill="#292524"/>
+  </g>
+
+  <!-- Editorial Bottom Monogram Banner Overlay -->
+  <g transform="translate(60, 1070)">
+    <rect x="0" y="0" width="780" height="90" fill="#000000" fill-opacity="0.82" rx="4" stroke="#ffffff" stroke-opacity="0.15" stroke-width="1.5"/>
+    <text x="35" y="38" class="sans-bold" font-size="12" letter-spacing="4" fill="#a1a1aa">FOUNDERS &amp; CREATIVE DIRECTORS</text>
+    <text x="35" y="70" class="serif-display" font-size="32" fill="#ffffff">Garvit &amp; Ankit</text>
+    <text x="745" y="55" text-anchor="end" class="sans-bold" font-size="13" letter-spacing="3" fill="#e2e8f0">HAVEN · EST. 2026</text>
+  </g>
+</svg>

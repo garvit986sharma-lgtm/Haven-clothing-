@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1060" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-white-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5f7"/>
+      <stop offset="100%" stop-color="#e8e8ec"/>
+    </linearGradient>
+    <filter id="shadow-white" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#a0a0ab" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="800" height="1060" fill="url(#bg-white-grad)"/>
+
+  <!-- Subtle Studio Highlight -->
+  <circle cx="400" cy="500" r="380" fill="#ffffff" opacity="0.8" filter="blur(60px)"/>
+
+  <!-- Brand watermark tag -->
+  <text x="50" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" letter-spacing="4" fill="#888892" font-weight="600">HAVEN / ESSENTIALS</text>
+  <text x="750" y="80" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" letter-spacing="2" fill="#9999a3">WHT-04</text>
+
+  <!-- Garment Shadow & Shape -->
+  <g filter="url(#shadow-white)">
+    <!-- Main T-Shirt Body -->
+    <path d="M 270 210 Q 400 245 530 210 L 670 330 L 610 440 L 530 380 L 540 850 Q 400 865 260 850 L 270 380 L 190 440 L 130 330 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- Ribbed Collar -->
+  <path d="M 320 215 C 340 280 460 280 480 215 C 455 260 345 260 320 215 Z" fill="#fafafa" stroke="#e0e0e5" stroke-width="2"/>
+  <path d="M 330 216 Q 400 255 470 216" stroke="#d5d5db" stroke-width="3" fill="none"/>
+
+  <!-- Neck label -->
+  <rect x="365" y="240" width="70" height="32" fill="#111113" rx="2"/>
+  <text x="400" y="258" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" letter-spacing="3" fill="#ffffff" font-weight="700">HAVEN</text>
+  <text x="400" y="268" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" letter-spacing="1" fill="#bbb">M · COMBED COTTON</text>
+
+  <!-- Minimal chest embroidery -->
+  <text x="340" y="420" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="3" fill="#222" font-weight="700">HAVEN</text>
+
+  <!-- Sleeve folds / seams -->
+  <line x1="270" y1="380" x2="215" y2="280" stroke="#ebebef" stroke-width="3" stroke-linecap="round"/>
+  <line x1="530" y1="380" x2="585" y2="280" stroke="#ebebef" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Bottom Hem stitching -->
+  <line x1="262" y1="840" x2="538" y2="840" stroke="#dedee4" stroke-dasharray="4,4" stroke-width="1.5"/>
+
+  <!-- Editorial Info Footer -->
+  <text x="400" y="990" text-anchor="middle" font-family="'Playfair Display', serif" font-style="italic" font-size="19" fill="#44444a">HAVEN Essential Tee — White</text>
+  <text x="400" y="1015" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="2" fill="#777782">HEAVYWEIGHT 220 GSM · 100% COMBED COTTON</text>
+</svg>

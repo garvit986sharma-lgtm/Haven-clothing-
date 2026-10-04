@@ -1,0 +1,6 @@
+{
+  "name": "HAVEN — Premium Modern Streetwear",
+  "description": "Minimal premium streetwear clothing label. Made for the ones who move different.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

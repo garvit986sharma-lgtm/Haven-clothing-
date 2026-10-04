@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1060" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-escape-studio" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5f7"/>
+      <stop offset="100%" stop-color="#eaeaea"/>
+    </linearGradient>
+    <filter id="shadow-model-escape" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@700;800;900&amp;display=swap');
+      .serif-italic { font-family: 'Playfair Display', Georgia, serif; font-style: italic; }
+      .sans-black { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 900; }
+    </style>
+  </defs>
+
+  <!-- Studio Clean Backdrop -->
+  <rect width="800" height="1060" fill="url(#bg-escape-studio)"/>
+
+  <!-- Male Model From Behind: Curly hair and neck -->
+  <g transform="translate(400, 150)">
+    <!-- Neck -->
+    <path d="M -38 0 L -38 70 L 38 70 L 38 0 Z" fill="#d2a382"/>
+    <!-- Silver necklace chain -->
+    <path d="M -25 35 Q 0 55 25 35" stroke="#ccc" stroke-width="2.5" fill="none"/>
+    
+    <!-- Curly Hair Back of Head -->
+    <circle cx="0" cy="-35" r="48" fill="#3b2b23"/>
+    <circle cx="-25" cy="-45" r="22" fill="#2d1f18"/>
+    <circle cx="25" cy="-45" r="22" fill="#2d1f18"/>
+    <circle cx="-35" cy="-25" r="18" fill="#33241c"/>
+    <circle cx="35" cy="-25" r="18" fill="#33241c"/>
+    <circle cx="0" cy="-60" r="24" fill="#2d1f18"/>
+    <circle cx="-15" cy="-20" r="16" fill="#423128"/>
+    <circle cx="15" cy="-20" r="16" fill="#423128"/>
+  </g>
+
+  <!-- Heavyweight Washed Black Oversized Tee (From Behind) -->
+  <g filter="url(#shadow-model-escape)">
+    <path d="M 330 220 
+             Q 400 235 470 220 
+             L 640 270 
+             L 690 530 
+             L 580 550 
+             L 560 380 
+             L 560 880 
+             Q 400 895 240 880 
+             L 240 380 
+             L 220 550 
+             L 110 530 
+             L 160 270 Z" 
+          fill="#1c1c1f"/>
+  </g>
+
+  <!-- Collar back seam -->
+  <path d="M 345 220 Q 400 240 455 220" stroke="#2d2d32" stroke-width="6" fill="none"/>
+
+  <!-- Back Graphic: Matches user's screenshot exactly (with HAVEN instead of drixky) -->
+  <g transform="translate(400, 480)">
+    <!-- Small top details -->
+    <text x="-90" y="-85" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" letter-spacing="1" fill="#bbb" font-weight="700">WORLDWIDE</text>
+    <text x="-90" y="-75" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" letter-spacing="1" fill="#888">ESTABLISHED MMXXVII</text>
+
+    <!-- Globe outline icon -->
+    <circle cx="90" cy="-80" r="12" fill="none" stroke="#aaa" stroke-width="1.2"/>
+    <ellipse cx="90" cy="-80" rx="6" ry="12" fill="none" stroke="#aaa" stroke-width="1"/>
+    <line x1="78" y1="-80" x2="102" y2="-80" stroke="#aaa" stroke-width="1"/>
+
+    <!-- Giant ESCAPE typography -->
+    <text x="0" y="-15" text-anchor="middle" class="sans-black" font-size="62" letter-spacing="4" fill="#dedede">ESCAPE</text>
+    
+    <!-- Script 'the ordinary' directly underneath -->
+    <text x="0" y="18" text-anchor="middle" class="serif-italic" font-size="24" fill="#ffffff">the ordinary</text>
+
+    <!-- Bottom subtext and barcode -->
+    <text x="-70" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" letter-spacing="1.5" fill="#888" font-weight="700">DISCOVER MORE</text>
+    <text x="-70" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" letter-spacing="1.5" fill="#888" font-weight="700">LIVE FREELY</text>
+    <text x="-70" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" letter-spacing="2" fill="#fff" font-weight="800">HAVEN</text>
+
+    <!-- Barcode and LIMITED EDITION tag -->
+    <g transform="translate(60, 52)">
+      <line x1="0" y1="0" x2="0" y2="22" stroke="#fff" stroke-width="2"/>
+      <line x1="4" y1="0" x2="4" y2="22" stroke="#fff" stroke-width="1"/>
+      <line x1="7" y1="0" x2="7" y2="22" stroke="#fff" stroke-width="3"/>
+      <line x1="12" y1="0" x2="12" y2="22" stroke="#fff" stroke-width="1.5"/>
+      <line x1="16" y1="0" x2="16" y2="22" stroke="#fff" stroke-width="2.5"/>
+      <line x1="21" y1="0" x2="21" y2="22" stroke="#fff" stroke-width="1"/>
+      <line x1="25" y1="0" x2="25" y2="22" stroke="#fff" stroke-width="3"/>
+      <line x1="31" y1="0" x2="31" y2="22" stroke="#fff" stroke-width="1.5"/>
+      <text x="15" y="32" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" letter-spacing="1" fill="#aaa">LIMITED EDITION</text>
+    </g>
+  </g>
+
+  <!-- Red Offer Banner: "GET FOR ₹999" -->
+  <g transform="translate(40, 780)">
+    <rect x="0" y="0" width="200" height="42" fill="#e11d48" rx="6"/>
+    <text x="100" y="26" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" letter-spacing="1.5" fill="#ffffff">GET FOR ₹999</text>
+  </g>
+</svg>
